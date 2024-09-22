@@ -40,7 +40,6 @@ class _MyHomePageState extends State<MyHomePage> {
   File? _image;
   final picker = ImagePicker();
   List<String> _resultText = [];
-  // bool isAadhar = true;
 
   @override
   void initState() {
@@ -88,37 +87,6 @@ class _MyHomePageState extends State<MyHomePage> {
         await textRecognizer.processImage(inputImage);
 
     List<String> scannedText = recognizedText.text.split("\n");
-
-    //RegExp for aadhar no. pattern.
-
-    //Aadhar No. matching or identifying
-    // for (var e in scannedText) {
-    //   if (aadharRegex.hasMatch(e)) {
-    //     scannedText[scannedText.indexOf(e)] = 'Aadhar No.: $e';
-    //   }
-    // }
-
-    // for (var e in scannedText) {
-    //   Match? match = genderRegex.firstMatch(e);
-
-    //   if (match != null) {
-    //     scannedText[scannedText.indexOf(e)] = 'Gender: ${match.group(0)}';
-    //   }
-    // }
-
-    //     caseSensitive: false);
-    // for (var e in scannedText) {
-    //   Match? match = dobRegex.firstMatch(e);
-    //   if (match != null) {
-    //     scannedText[scannedText.indexOf(e)] = "${match.group(1)}";
-    //   }
-    // }
-
-    // for (var e in scannedText) {
-    //   if (nameRegex.hasMatch(e)) {
-    //     scannedText[scannedText.indexOf(e)] = "Name: $e";
-    //   }
-    // }
 
     //Regular EXpressions
     RegExp nameRegex =
